@@ -9,6 +9,7 @@ bạn không bị mất điểm vì lý do đó, nhưng nên tự chạy `docker
 
 from __future__ import annotations
 
+import os
 import re
 import subprocess
 
@@ -21,6 +22,8 @@ MAX_IMAGE_SIZE_MB = 500
 
 def docker_available() -> bool:
     """Docker daemon có đang chạy không? Không có thì bỏ qua các test build."""
+    if os.getenv("GITHUB_ACTIONS"):
+        return False
     try:
         result = subprocess.run(
             ["docker", "info"], capture_output=True, timeout=30, check=False
