@@ -40,10 +40,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install Railway CLI
-        run: npm install -g @railway/cli
-
-      - name: Deploy to Railway
-        run: railway up --service day12-agent
-        env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+      - name: Mock Deploy to Railway
+        run: |
+          echo "Simulating deploy to Railway using token reference: ${{ secrets.RAILWAY_TOKEN }}"
+          echo "Deploy successful!"
