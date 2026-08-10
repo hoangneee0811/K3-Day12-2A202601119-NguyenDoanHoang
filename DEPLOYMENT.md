@@ -12,7 +12,7 @@
 |-----|----------|
 | Họ và tên | Nguyễn Doãn Hoàng |
 | Mã học viên | 2A202601119 |
-| Repo | https://github.com/hoangneee0811/Day12-2A202601119-NguyenDoanHoang.git |
+| Repo | https://github.com/hoangneee0811/K3-Day12-2A202601119-NguyenDoanHoang.git |
 
 ## Service
 
